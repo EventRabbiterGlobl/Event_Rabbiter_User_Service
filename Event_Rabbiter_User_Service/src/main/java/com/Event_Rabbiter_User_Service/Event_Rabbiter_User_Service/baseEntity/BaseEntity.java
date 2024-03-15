@@ -1,4 +1,4 @@
-package com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.entity;
+package com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.baseEntity;
 
 
 import jakarta.persistence.GeneratedValue;
@@ -10,6 +10,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.UUID;
+
 @MappedSuperclass
 @Getter
 @Setter
@@ -20,6 +22,7 @@ public class BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
     private boolean activated ;
     private boolean deleted ;
 
