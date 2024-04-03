@@ -1,4 +1,4 @@
-package com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.Admin.adminEntity;
+package com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.entity;
 
 import com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.baseEntity.BaseEntity;
 import com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.entity.UserProfile;
@@ -18,6 +18,6 @@ public class VerificationPurpleTick  extends BaseEntity {
 
     @OneToOne
     @JoinColumn(name = "verification_id")
-    private UserProfile verification;
+    private UserProfile userVerificationId;
 
 }

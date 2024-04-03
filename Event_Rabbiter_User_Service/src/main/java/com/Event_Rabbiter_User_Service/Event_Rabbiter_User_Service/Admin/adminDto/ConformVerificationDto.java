@@ -1,17 +1,18 @@
 package com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.Admin.adminDto;
 
 
-import com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.entity.UserProfile;
+import jakarta.persistence.Entity;
 import lombok.*;
 
-@Setter
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class VerificationPurpleTickDto {
+public class ConformVerificationDto {
 
 
-    private String userId;
+    private String  verificationUserProfileId;
+    private boolean conformation;
 
 }
