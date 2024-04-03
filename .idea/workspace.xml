@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa2ff056-5634-4759-86c3-ee8da7549e05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/config/ModelMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/controller/UserProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event_Rabbiter_User_Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/dto/UserProfileDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/dto/UserProfileDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/serviceImp/UserProfileIServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/serviceImp/UserProfileIServiceImp.java" afterDir="false" />
+    <list default="true" id="aa2ff056-5634-4759-86c3-ee8da7549e05" name="Changes" comment="Add verification Too">
+      <change afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminController/verificationConformationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminDto/ConformVerificationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminEntity/EventPlaceAndSeatingCapacity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminService/ConformationVerification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminServiceImp/ConformationVerificationImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/controller/VerificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/serviceImp/VerificationPurpleTickServiceImo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminController/ListOfCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminController/ListOfCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminDto/VerificationPurpleTickDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/dto/VerificationPurpleTickDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminEntity/VerificationPurpleTick.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/entity/VerificationPurpleTick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminRepo/VerificationPurpleTickRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/repository/VerificationPurpleTickRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminService/VerificationPurpleTickService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/service/VerificationPurpleTickService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/Admin/adminServiceImp/VerificationPurpleTickServiceImo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/entity/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event_Rabbiter_User_Service/src/main/java/com/Event_Rabbiter_User_Service/Event_Rabbiter_User_Service/entity/UserProfile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,15 +55,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "save-profile",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Event-Rabbiter/Event_Rabbiter_User_Service"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;verification-profile&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Event-Rabbiter/Event_Rabbiter_User_Service&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,6 +73,19 @@
       <option name="presentableId" value="Default" />
       <updated>1710311215408</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add verification Too">
+      <option name="closed" value="true" />
+      <created>1710485774440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710485774440</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add verification Too" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add verification Too" />
   </component>
 </project>

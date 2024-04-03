@@ -7,6 +7,8 @@ import com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.Admin.adminSe
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 
 @Service
 public class ListOfCategoryServiceImp implements ListOfCategoryService {
@@ -16,6 +18,7 @@ public class ListOfCategoryServiceImp implements ListOfCategoryService {
 
     @Override
     public ListOfCategoryDto saveList(ListOfCategoryDto listSave) {
+
         ListOfCategory listOfCategory=ListOfCategory
                 .builder()
                 .category(listSave.getCategory())
@@ -25,5 +28,10 @@ public class ListOfCategoryServiceImp implements ListOfCategoryService {
                 .builder()
                 .category(listOfCategory.getCategory())
                 .build();
+    }
+
+    @Override
+    public List<ListOfCategory> getAllListOfCategory() {
+        return listOfCategoryRepository.findAll();
     }
 }
