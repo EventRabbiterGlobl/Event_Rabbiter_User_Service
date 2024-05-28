@@ -1,7 +1,10 @@
 package com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.entity;
 
 
+import com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.Admin.adminEntity.GatherGrove;
+import com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.Admin.adminEntity.IndividualCategory;
 import com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.Admin.adminEntity.ListOfCategory;
+import com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.Admin.adminEntity.TeamCategory;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -31,10 +34,24 @@ public class UserProfile  {
     private double location;
     private double locationLongitude;
     private String nameOfPlace;
+    private String imageUrl;
+    private String imagePublicId;
+    private boolean activated ;
+    private boolean deleted ;
+
 
 
     @ManyToOne
     private ListOfCategory listOfCategory;
+
+    @ManyToOne
+    private GatherGrove gatherGrove;
+
+    @ManyToOne
+    private IndividualCategory individualCategory;
+
+    @ManyToOne
+    private TeamCategory teamCategory;
 
 
 }

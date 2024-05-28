@@ -3,6 +3,8 @@ package com.Event_Rabbiter_User_Service.Event_Rabbiter_User_Service.Admin.adminD
 
 import lombok.*;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -10,7 +12,7 @@ import lombok.*;
 @Builder
 public class ListOfCategoryDto {
 
-    private String category;
+    private  String category;
 
 
 
