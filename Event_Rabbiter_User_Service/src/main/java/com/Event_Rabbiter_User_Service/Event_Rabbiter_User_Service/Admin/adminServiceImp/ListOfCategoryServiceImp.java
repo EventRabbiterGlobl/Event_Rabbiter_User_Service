@@ -34,4 +34,6 @@ public class ListOfCategoryServiceImp implements ListOfCategoryService {
     public List<ListOfCategory> getAllListOfCategory() {
         return listOfCategoryRepository.findAll();
     }
+
+
 }

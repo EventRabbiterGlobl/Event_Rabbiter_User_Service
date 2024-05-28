@@ -1,7 +1,16 @@
 spring:
+  multipart:
+    max-file-size: 50MB
+    max-request-size: 50MB
   application:
     name: "User"
   profiles:
     active: "Service"
   config:
     import: "optional:configserver:http://localhost:6666/"
+
+
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 50MB

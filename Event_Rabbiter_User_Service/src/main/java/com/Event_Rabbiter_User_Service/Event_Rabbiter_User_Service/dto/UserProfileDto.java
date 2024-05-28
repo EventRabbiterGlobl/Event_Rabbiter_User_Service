@@ -27,12 +27,18 @@ public class UserProfileDto {
     private String description;
     private boolean profileVerification;
     private String listOfCategoryId;
+    private String imageUrl;
+    private String imagePublicId;
+    private boolean activated ;
+    private boolean deleted ;
+
 
 
     private double location;
     private double locationLongitude;
     private String nameOfPlace;
     private Long seatNumber;
+
 
 
 

@@ -8,6 +8,5 @@ import java.util.UUID;
 
 
 @Repository
-public interface EventSeatsRepository
-        extends JpaRepository<EventSeats, UUID> {
+public interface EventSeatsRepository extends JpaRepository<EventSeats, UUID> {
 }

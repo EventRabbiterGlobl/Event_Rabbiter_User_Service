@@ -20,6 +20,10 @@ public class EventSeats extends BaseEntity {
     private UserProfile userProfile;
 
 
+    @ManyToOne
+    private EventSpaces eventSpaces;
+
+
 
 
 
