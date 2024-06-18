@@ -13,7 +13,7 @@ import java.util.List;
 @FeignClient(name ="EVENT-SERVICE")
 public interface EventCreateFeign {
 
-    @PostMapping("/getUserSpecificDate")
+    @PostMapping("api/v1/event-create-booking/getUserSpecificDate")
     ResponseEntity<List<String>> getUserInSpecificData(@RequestBody DateDto dateDto);
 
 

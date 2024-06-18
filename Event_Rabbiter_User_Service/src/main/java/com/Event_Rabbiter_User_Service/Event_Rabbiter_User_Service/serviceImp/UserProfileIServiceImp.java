@@ -253,17 +253,25 @@ public class UserProfileIServiceImp implements UserProfileService {
 
     @Override
     public List<UserProfile> listOfUserInDate(DateDto localDateTime) {
-
-
         ResponseEntity<List<String>> responseEntity = eventCreateFeign.getUserInSpecificData(localDateTime);
-        List<String> listOfUserId = Optional.ofNullable(responseEntity.getBody()).orElse(Collections.emptyList());
-        List<UserProfile> allUserProfiles = userProfileRepository.findAll();
+
+        List<String> listOfUserId = Optional.ofNullable(responseEntity.getBody())
+                .map(list -> list.stream()
+                        .flatMap(str -> Arrays.stream(str.replaceAll("[\\[\\]\\s]", "").split(",")))
+                        .collect(Collectors.toList()))
+                .orElse(Collections.emptyList());
 
 
-        return allUserProfiles.stream()
+        return userProfileRepository.findAll().stream()
                 .filter(userProfile -> !listOfUserId.contains(userProfile.getId().toString()))
-                .collect(Collectors.toList());
+                .filter(UserProfile::isActivated)
+                .toList();
     }
+
+
+
+
+
 
 
 
@@ -288,7 +296,7 @@ public class UserProfileIServiceImp implements UserProfileService {
                             .names(name)
                             .build();
                     teamRepository.save(team);
-                });
+        });
     }
 
     private void  saveSeat(Long num,UserProfile userProfile){
